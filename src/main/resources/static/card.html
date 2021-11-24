@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            width: 432px;
+            transform-style: preserve-3d;
+        }
+
+        #card {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .stats {
+            width: 100%;
+        }
+
+        .stats-container {
+            background: #fff;
+            left: 0;
+            width: 90%;
+            padding: 3% 5% 0;
+        }
+
+        .stats-container .time {
+            font-size: xxx-large;
+            font-weight: 600;
+            color: #393c45;
+            float: right;
+        }
+
+        .stats-container p {
+            color: #b1b1b3;
+        }
+
+        .stats-container .day-time {
+            float: right;
+            color: #48cfad;
+            font-size: xx-large;
+            font-weight: 600;
+        }
+
+        .stats-container img {
+            border-radius: 25px;
+            float: left;
+            width:110px;
+            height:110px;
+        }
+
+        .stick {
+            padding: 2% 0 0;
+        }
+
+        .stick strong {
+            font-weight: 700;
+            color: #393c45;
+            font-size: x-large;
+            padding: 1% 0 0;
+        }
+
+        .stick span {
+            color: #969699;
+            font-size: large;
+            display: block;
+            margin-bottom: 1%;
+        }
+
+        .comment strong {
+            font-weight: 700;
+            color: #393c45;
+            font-size: x-large;
+        }
+
+        div.comment {
+            width: 100%;
+            margin-top: 1%;
+            font-size: large;
+            color: #111111;
+        }
+
+        div.resolve {
+            margin-top: 1%;
+            margin-bottom: 10%;
+            color: #999999;
+        }
+
+        div.dnt {
+            margin-bottom: 4%;
+            text-align: left;
+            font-size: small;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div id="card">
+    <div class="image"><img src="{IMG_URL}" alt="图片丢失"/>
+    </div>
+    <div class="stats">
+        <div class="stats-container">
+            <div style="float: left; width: 100%;margin-bottom: 3%">
+                <img src="{HEAD_URL}" alt="图片丢失">
+                <div>
+                    <span class="day-time">{DATE_TIME}</span>
+                    <span class="time">早早早</span>
+                </div>
+            </div>
+            <div class="stick">
+                <strong>{LUCK_STATUE}</strong>
+                <span style="float: right;margin-top: 1%;margin-right: 3%">{CARD_FLAG}</span>
+                <span>{STARS}</span>
+                <strong>短评</strong>
+                <div class="comment">{COMMENT}</div>
+                <div class="resolve">解签: {RESOLVE}</div>
+            </div>
+            <div class="dnt">随机生成，请勿迷信</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

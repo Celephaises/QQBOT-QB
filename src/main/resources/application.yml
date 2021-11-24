@@ -1,0 +1,13 @@
+server:
+  port: 8281
+spring:
+  profiles:
+    active:
+      - db
+      - go-cqhttp
+      - pixiv
+      - cawler
+logging:
+  file:
+    name: C:/log/server.log
+  level.*: info

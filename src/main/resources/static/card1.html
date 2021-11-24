@@ -1,0 +1,890 @@
+<head>
+    <link href="css/default.css" type="text/css" rel="stylesheet"/>
+    <link href="css/card.css" type="text/css" rel="stylesheet"/>
+    <style>
+        .mobileFrameCursor div * {
+            cursor: inherit !important;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        p {
+            margin: 0;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1;
+            -webkit-font-feature-settings: "kern";
+            -moz-font-feature-settings: "kern";
+            -moz-font-feature-settings: "kern=1";
+            font-kerning: normal;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        iframe {
+            background: #FFFFFF;
+        }
+
+        /* to match IE with C, FF */
+        input {
+            padding: 1px 0 1px 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        input[type=text]::-ms-clear {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+
+        textarea {
+            margin: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        @keyframes pulsate {
+            from {
+                box-shadow: 0 0 10px #15d6ba;
+            }
+            to {
+                box-shadow: 0 0 20px #15d6ba;
+            }
+        }
+
+        @-webkit-keyframes pulsate {
+            from {
+                -webkit-box-shadow: 0 0 10px #15d6ba;
+                box-shadow: 0 0 10px #15d6ba;
+            }
+            to {
+                -webkit-box-shadow: 0 0 20px #15d6ba;
+                box-shadow: 0 0 20px #15d6ba;
+            }
+        }
+
+        @-moz-keyframes pulsate {
+            from {
+                -moz-box-shadow: 0 0 10px #15d6ba;
+                box-shadow: 0 0 10px #15d6ba;
+            }
+            to {
+                -moz-box-shadow: 0 0 20px #15d6ba;
+                box-shadow: 0 0 20px #15d6ba;
+            }
+        }
+
+        #ios-safari-fixed div {
+            pointer-events: auto;
+        }
+
+        /*
+        ---------------------------------------------------------------------------------------------------------------------------------
+        */
+
+        .ax_default {
+            font-family: 'Arial Normal', 'Arial', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            letter-spacing: normal;
+            color: #333333;
+            vertical-align: none;
+            text-align: center;
+            line-height: normal;
+            text-transform: none;
+        }
+
+        .label {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        ._文本段落 {
+            text-align: left;
+        }
+
+        body {
+            background-image: none;
+            position: relative;
+            left: 0;
+            width: 734px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #card {
+            position: absolute;
+            z-index: 0;
+            width: 735px;
+            height: 642px;
+        }
+
+        #u0 {
+            border-width: 0;
+            position: absolute;
+            left: -1px;
+            top: 0;
+            width: 736px;
+            height: 643px;
+            display: flex;
+        }
+
+        #u0 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u1_div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 662px;
+            height: 510px;
+            background: inherit;
+            background-color: rgba(255, 255, 255, 1);
+            border: 0 none;
+            border-radius: 25px;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        #u1 {
+            border-width: 0;
+            position: absolute;
+            left: 42px;
+            top: 110px;
+            width: 662px;
+            height: 510px;
+            display: flex;
+        }
+
+        #u1 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u2 {
+            border-width: 0;
+            position: absolute;
+            left: 291px;
+            top: 29px;
+            width: 164px;
+            height: 164px;
+            display: flex;
+        }
+
+        #u2 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u3_div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 320px;
+            height: 104px;
+            background: -webkit-linear-gradient(318.946614232415deg, rgba(204, 50, 133, 1) -54%, rgba(102, 72, 225, 1) 262%);
+            background: -moz-linear-gradient(131.053385767585deg, rgba(204, 50, 133, 1) -54%, rgba(102, 72, 225, 1) 262%);
+            background: linear-gradient(131.053385767585deg, rgba(204, 50, 133, 1) -54%, rgba(102, 72, 225, 1) 262%);
+            border: 0 none;
+            border-radius: 0;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        #u3 {
+            border-width: 0;
+            position: absolute;
+            left: 213px;
+            top: 6px;
+            width: 320px;
+            height: 104px;
+            display: flex;
+        }
+
+        #u3 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u4_img {
+            border-radius: 50%;
+            top: 0;
+            width: 124px;
+            height: 124px;
+        }
+
+        #u4 {
+            border-width: 0;
+            position: absolute;
+            left: 311px;
+            top: 49px;
+            width: 124px;
+            height: 124px;
+            display: flex;
+        }
+
+        #u4 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u5 {
+            border-width: 0;
+            position: absolute;
+            left: 108px;
+            top: 201px;
+            width: 530px;
+            height: 27px;
+            display: flex;
+            font-size: 26px;
+            color: rgba(133, 65, 196, 0.83921568627451);
+            text-align: center;
+        }
+
+        #u5 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u5_text {
+            border-width: 0;
+            word-wrap: break-word;
+            text-transform: none;
+        }
+
+        #u6 {
+            border-width: 0;
+            position: absolute;
+            left: 67px;
+            top: 273px;
+            width: 216px;
+            height: 24px;
+            display: flex;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #u6 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u6_text {
+            border-width: 0;
+            word-wrap: break-word;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            text-transform: none;
+        }
+
+        #u7 {
+            border-width: 0;
+            position: absolute;
+            left: 341px;
+            top: 307px;
+            width: 64px;
+            height: 18px;
+            display: flex;
+            font-size: 16px;
+        }
+
+        #u7 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u7_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+        #u8 {
+            border-width: 0;
+            position: absolute;
+            left: 143px;
+            top: 307px;
+            width: 64px;
+            height: 18px;
+            display: flex;
+            font-size: 16px;
+        }
+
+        #u8 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u8_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+        #u9 {
+            border-width: 0;
+            position: absolute;
+            left: 539px;
+            top: 307px;
+            width: 64px;
+            height: 18px;
+            display: flex;
+            font-size: 16px;
+        }
+
+        #u9 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u9_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+        #u10 {
+            border-width: 0;
+            position: absolute;
+            left: 364px;
+            top: 239px;
+            width: 81px;
+            height: 18px;
+            display: flex;
+            font-size: 16px;
+            color: #37B5DB;
+        }
+
+        #u10 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u10_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+        #u11 {
+            border-width: 0;
+            position: absolute;
+            left: 332px;
+            top: 237px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+        }
+
+        #u11 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u12 {
+            border-width: 0;
+            position: absolute;
+            left: 306px;
+            top: 273px;
+            width: 134px;
+            height: 24px;
+            display: flex;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #u12 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u12_text {
+            border-width: 0;
+            word-wrap: break-word;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            text-transform: none;
+        }
+
+        #u13 {
+            border-width: 0;
+            position: absolute;
+            left: 452px;
+            top: 273px;
+            width: 238px;
+            height: 24px;
+            display: flex;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #u13 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u13_text {
+            border-width: 0;
+            word-wrap: break-word;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            -webkit-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            -moz-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.647058823529412);
+            text-transform: none;
+        }
+
+        #u14_div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 32px;
+            background: -webkit-linear-gradient(306.571188492765deg, rgba(204, 50, 133, 1) -714%, rgba(102, 72, 225, 1) 597%);
+            background: -moz-linear-gradient(143.428811507235deg, rgba(204, 50, 133, 1) -714%, rgba(102, 72, 225, 1) 597%);
+            background: linear-gradient(143.428811507235deg, rgba(204, 50, 133, 1) -714%, rgba(102, 72, 225, 1) 597%);
+            border: 0 none;
+            border-radius: 20px;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        #u14 {
+            border-width: 0;
+            position: absolute;
+            left: 343px;
+            top: 347px;
+            width: 60px;
+            height: 32px;
+            display: flex;
+        }
+
+        #u14 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u15 {
+            border-width: 0;
+            position: absolute;
+            left: 362px;
+            top: 348px;
+            width: 22px;
+            height: 26px;
+            display: flex;
+            font-size: 22px;
+            color: #FDFDFD;
+        }
+
+        #u15 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u15_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-shadow: 1px 1px 5px rgba(255, 254, 254, 0.647058823529412);
+            -webkit-text-shadow: 1px 1px 5px rgba(255, 254, 254, 0.647058823529412);
+            -moz-text-shadow: 1px 1px 5px rgba(255, 254, 254, 0.647058823529412);
+            text-transform: none;
+        }
+
+        #u16 {
+            border-width: 0;
+            position: absolute;
+            left: 190px;
+            top: 389px;
+            width: 367px;
+            height: 50px;
+            display: flex;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #u16 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u16_text {
+            border-width: 0;
+            word-wrap: break-word;
+            text-transform: none;
+        }
+
+        #u17 {
+            border-width: 0;
+            position: absolute;
+            left: 336px;
+            top: 450px;
+            width: 74px;
+            height: 32px;
+            display: flex;
+        }
+
+        #u17 .text {
+            position: absolute;
+            align-self: center;
+            padding: 2px 2px 2px 2px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u18 {
+            border-width: 0;
+            position: absolute;
+            left: 351px;
+            top: 451px;
+            width: 44px;
+            height: 26px;
+            display: flex;
+            font-size: 22px;
+            color: #9648BD;
+        }
+
+        #u18 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u18_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-shadow: 1px 1px 5px rgba(255, 254, 254, 0.647058823529412);
+            -webkit-text-shadow: 1px 1px 5px rgba(255, 254, 254, 0.647058823529412);
+            -moz-text-shadow: 1px 1px 5px rgba(255, 254, 254, 0.647058823529412);
+            text-transform: none;
+        }
+
+        #u19 {
+            border-width: 0;
+            position: absolute;
+            left: 173px;
+            top: 491px;
+            width: 400px;
+            height: 85px;
+            display: flex;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        #u19 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u19_text {
+            border-width: 0;
+            word-wrap: break-word;
+            text-transform: none;
+        }
+
+        #u20 {
+            border-width: 0;
+            position: absolute;
+            left: 67px;
+            top: 598px;
+            width: 126px;
+            height: 16px;
+            display: flex;
+            color: #C6C5C5;
+        }
+
+        #u20 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u20_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+        #u21 {
+            border-width: 0;
+            position: absolute;
+            left: 610px;
+            top: 598px;
+            width: 69px;
+            height: 16px;
+            display: flex;
+            color: #C6C5C5;
+        }
+
+        #u21 .text {
+            position: absolute;
+            align-self: flex-start;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #u21_text {
+            border-width: 0;
+            white-space: nowrap;
+            text-transform: none;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="card">
+    <!-- Unnamed (矩形) -->
+    <div id="u0" class="ax_default _形状">
+        <svg width="736px" height="643px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient gradientUnits="userSpaceOnUse" x1="-1" y1="0" x2="735" y2="643" id="LinearGradient1">
+                    <stop id="Stop2" stop-color="#cc3285" stop-opacity="0.996078431372549" offset="0"/>
+                    <stop id="Stop3" stop-color="#6648e1" offset="1"/>
+                </linearGradient>
+            </defs>
+            <g transform="matrix(1 0 0 1 1 0 )">
+                <path d="M -0.5 0.5  L 734.5 0.5  L 734.5 642.5  L -0.5 642.5  L -0.5 0.5  Z " fill-rule="nonzero"
+                      fill="url(#LinearGradient1)" stroke="none"/>
+                <path d="M -0.5 0.5  L 734.5 0.5  L 734.5 642.5  L -0.5 642.5  L -0.5 0.5  Z " stroke-width="1"
+                      stroke="#797979" fill="none"/>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u1" class="ax_default box_2">
+        <div id="u1_div" class=""></div>
+    </div>
+
+    <!-- Unnamed (圆形) -->
+    <div id="u2" class="ax_default ellipse">
+        <svg width="164px" height="164px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient cx="240" cy="347" r="82" gradientTransform="matrix(-1 0 0 -1 480 694 )"
+                                gradientUnits="userSpaceOnUse" id="RadialGradient4">
+                    <stop id="Stop5" stop-color="#ff0505" stop-opacity="0.996078431372549" offset="0"/>
+                    <stop id="Stop6" stop-color="#c238c4" stop-opacity="0.996078431372549" offset="0.7"/>
+                    <stop id="Stop7" stop-color="#e637c0" stop-opacity="0.992156862745098" offset="0.78"/>
+                    <stop id="Stop8" stop-color="#ffffff" stop-opacity="0.0823529411764706" offset="1"/>
+                </radialGradient>
+            </defs>
+            <g transform="matrix(1 0 0 1 -158 -265 )">
+                <path d="M 240 265  C 285.92 265  322 301.08  322 347  C 322 392.92  285.92 429  240 429  C 194.08 429  158 392.92  158 347  C 158 301.08  194.08 265  240 265  Z "
+                      fill-rule="nonzero" fill="url(#RadialGradient4)" stroke="none"/>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u3" class="ax_default box_1">
+        <div id="u3_div" class=""></div>
+    </div>
+
+    <!-- Unnamed (圆形) -->
+    <div id="u4" class="ax_default ellipse">
+        <img id="u4_img" src="{HEAD_URL}" alt="图片丢失">
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u5" class="ax_default label">
+        <div id="u5_text" class="text ">
+            <p><span>{GREETINGS}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u6" class="ax_default label">
+        <div id="u6_text" class="text ">
+            <p><span>{LUCK_STATUE}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u7" class="ax_default label">
+        <div id="u7_text" class="text ">
+            <p><span>运势星级</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u8" class="ax_default label">
+        <div id="u8_text" class="text ">
+            <p><span>今日运势</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u9" class="ax_default label">
+        <div id="u9_text" class="text ">
+            <p><span>获得积分</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u10" class="ax_default label">
+        <div id="u10_text" class="text ">
+            <p><span>{DATE_TIME}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (图像 ) -->
+    <div id="u11" class="ax_default image">
+      <span>
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="800" width="20" height="20">
+          <path
+                  d="M512 85.333333c235.264 0 426.666667 191.36 426.666667 426.666667 0 235.264-191.402667 426.666667-426.666667 426.666667a424.106667 424.106667 0 0 1-338.218667-166.485334 31.018667 31.018667 0 0 1 49.152-37.888A362.368 362.368 0 0 0 512 876.629333c201.045333 0 364.629333-163.541333 364.629333-364.629333 0-201.045333-163.584-364.629333-364.629333-364.629333S147.413333 310.954667 147.413333 512c0 18.688 1.365333 37.248 4.138667 55.424a31.061333 31.061333 0 0 1-61.312 9.386667A430.933333 430.933333 0 0 1 85.333333 511.957333C85.333333 276.736 276.736 85.333333 512 85.333333z m-14.506667 218.026667c17.152 0 31.061333 13.866667 31.061334 31.018667v189.696l146.090666 87.125333a31.018667 31.018667 0 0 1-31.744 53.333333l-161.28-96.213333a31.146667 31.146667 0 0 1-15.104-26.666667V334.378667c0-17.152 13.909333-31.061333 31.018667-31.061334z"
+                  fill="#000000" p-id="801"></path>
+        </svg>
+      </span>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u12" class="ax_default label">
+        <div id="u12_text" class="text ">
+            <p><span>{STARS}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u13" class="ax_default label">
+        <div id="u13_text" class="text ">
+            <p><span>{POINTS}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u14" class="ax_default box_1">
+        <div id="u14_div" class=""></div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u15" class="ax_default label">
+        <div id="u15_text" class="text ">
+            <p><span>签</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u16" class="ax_default label">
+        <div id="u16_text" class="text ">
+            <p><span>{COMMENT}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u17" class="ax_default box_1">
+        <svg width="74px" height="32px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient gradientUnits="userSpaceOnUse" x1="-2" y1="258.114285714286" x2="472.21"
+                                y2="841.026285714286" id="LinearGradient9">
+                    <stop id="Stop10" stop-color="#ffffff" stop-opacity="0.847058823529412" offset="0"/>
+                    <stop id="Stop11" stop-color="#6648e1" offset="1"/>
+                </linearGradient>
+            </defs>
+            <g transform="matrix(1 0 0 1 -205 -686 )">
+                <path d="M 207 702  A 14 14 0 0 1 221 688 L 263 688  A 14 14 0 0 1 277 702 A 14 14 0 0 1 263 716 L 221 716  A 14 14 0 0 1 207 702 Z "
+                      fill-rule="nonzero" fill="#ffffff" stroke="none"/>
+                <path d="M 206 702  A 15 15 0 0 1 221 687 L 263 687  A 15 15 0 0 1 278 702 A 15 15 0 0 1 263 717 L 221 717  A 15 15 0 0 1 206 702 Z "
+                      stroke-width="2" stroke-dasharray="6,2" stroke="url(#LinearGradient9)" fill="none"/>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u18" class="ax_default label">
+        <div id="u18_text" class="text ">
+            <p><span>解签</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u19" class="ax_default _文本段落">
+        <div id="u19_text" class="text ">
+            <p><span>{RESOLVE}</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u20" class="ax_default label">
+        <div id="u20_text" class="text ">
+            <p><span>随机生成，请勿迷信</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (矩形) -->
+    <div id="u21" class="ax_default label">
+        <div id="u21_text" class="text ">
+            <p><span>@Celphise</span></p>
+        </div>
+    </div>
+</div>
+</body>
